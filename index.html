@@ -140,8 +140,7 @@
             economyTotal = economyNewCount * 150 ;
            }
             document.getElementById(ticket + '-total').innerText = economyTotal;
-            updateTotalText();
-            
+            updateTotalText();    
         }
         function updateTotalText() {
             const economyCount = getParseFloat('economy-count');
@@ -173,8 +172,6 @@
 
             const firstClassCount = document.getElementById('firstClass-count').value;
             document.getElementById('lastShowFirstClass').innerText = economyCount;
-
-
         })
         function bookNowUpdateText() {
             fullPage.style.display = 'none';
